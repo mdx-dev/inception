@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8" />
+	<script type="text/javascript" src="/inception/inception.js?level=child&target=/inception/example/toplevel/channel.html"></script>
+	<script type="text/javascript">
+		function ChildFunction(params){
+			document.getElementById('textfield').value= unescape(params.MyMessage); 
+		}
+	</script>
+</head>
+<body>
+	<h1>This is another domain's iframe</h1>
+	<input type="text" id="textfield"><input type="button" onclick="Inception.send({execute:'TopLevelFunction', OtherMessage: document.getElementById('textfield').value })" value="send">
+</body>
+</html
