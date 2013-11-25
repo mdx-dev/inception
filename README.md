@@ -51,3 +51,19 @@ Message from topLevel to iframe routes as such
 
 # Channels
 On loads, the channels register themselves into their appropriate parent to allow access for message sending. 
+
+
+# Getting Started
+Clone the repo down to a web server that can handle the PHP library and .htaccess (if you want to call .js instead of .php) 
+visit http://yourserver/inception/example/toplevel/ 
+
+The example will work the same way as if it were with different domains, the channels must exist on the different domains you 
+want to pair, but the inception library can be used as a single source. 
+
+Simply change the URL source of the channels, point each target to the correct channel 
+
+Question or Comments simply ask. 
+
+Thanks
+
+Rulian - Mdx Devopment : Mdx Medical 
