@@ -18,12 +18,12 @@ Each domain will use the other domain's channel as the communication portal.
 The channels then bubble up the message to the appropriate level. 
 
 # Example
-domain: abcdef.com 
-	* index.html (topLevel)
-		* function TopLevelFunction(param) { alert(param.OtherMessage) }
-	* channel.html (channelA) 
+	domain: abcdef.com 
+		* index.html (topLevel)
+			* function TopLevelFunction(param) { alert(param.OtherMessage) }
+		* channel.html (channelA) 
 
-domain bcdef.com 
+	domain bcdef.com 
 
 	* index.html (iframe) 
 		* function ChildFunction(param) { alert(param.MyMessage) }
@@ -37,7 +37,7 @@ domain bcdef.com
 
 # Message Trail
 	
-	Message from topLevel to iframe routes as such
+Message from topLevel to iframe routes as such
 	
 	topLevel : Inception.send({execute:'ChildFunction', MyMessage:"some text"})
 		-> targets ChannelB (on bcdef.com) passes json 
@@ -50,4 +50,4 @@ domain bcdef.com
 				-> Toplevel recieves message from ChannelA and executes 
 
 # Channels
-	On loads, the channels register themselves into their appropriate parent to allow access for message sending. 
+On loads, the channels register themselves into their appropriate parent to allow access for message sending. 
