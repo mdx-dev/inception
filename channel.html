@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <meta charset="utf-8" />
+        <script type="text/javascript" src="https://mdx-dev.github.io/inception/inception-static.js"></script>
+
+        <script type="text/javascript">
+
+                Inception._event(window,'load', function(){
+                        Inception._construct({level:'channel',target:'http://mdx-dev.github.io/inception/channel.html'});
+                });
+
+                function TopLevelFunction(params){
+                        document.getElementById('textfield').value=unescape(params.OtherMessage);
+                }
+        </script>
+</head>
+<body>
+        <h1>I am the top level channel</h1>
+</body>
+</html>
