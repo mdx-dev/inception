@@ -9,6 +9,9 @@ Uses iframes within iframes for communication (inception frames)
 * Two way communications between parent/child frames 
 * A single JS include at every level handles the details. 
 
+# Working demo 
+http://mdx-dev.github.io/inception/index.html
+
 # Implementing
 The way inception works is thru the use of "channels" that exist
 on the different levels of domains being tied together. 
